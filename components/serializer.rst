@@ -952,7 +952,7 @@ when such a case is encountered::
 
     echo $serializer->serialize($organization, 'json'); // Throws a CircularReferenceException
 
-The key ``circular_reference_limit`` in the default context sets the number of
+The key ``circular_reference_handler`` in the default context sets the number of
 times it will serialize the same object before considering it a circular
 reference. The default value is ``1``.
 
